@@ -1,6 +1,11 @@
 .App {
   text-align: center;
 }
+body {
+  background-image: url("../public/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .App-logo {
   height: 40vmin;
