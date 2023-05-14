@@ -1,0 +1,36 @@
+.example-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.header-text {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.icon-text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.icon-text img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.icon-text p {
+  margin: 0;
+}
+div p {
+  color: white;
+}

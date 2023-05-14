@@ -1,0 +1,90 @@
+.payment-summary-form {
+  width: 500px;
+  height: 500px;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.progress-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.progress-button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: none;
+}
+
+.progress-button.active {
+  background-color: #00f;
+}
+
+.form-header {
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input-box.active {
+  border-color: #00f;
+}
+
+.input-title {
+  font-weight: bold;
+}
+
+.input-amount {
+  font-size: 1.2em;
+}
+
+.summary-container {
+  margin-bottom: 20px;
+}
+
+.summary-text {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cancel-button {
+  background-color: #ccc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.submit-button {
+  background-color: #00f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
