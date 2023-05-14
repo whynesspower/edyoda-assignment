@@ -10,17 +10,8 @@ function Lockup() {
   return (
     <div className="example-container">
       <div className="header-text">
-        <h2>Access curated courses worth</h2>
-        <h3
-          style={{
-            color: "white",
-            textDecoration: "line-through",
-            // WebkitTextStroke: "1px red",
-          }}
-        >
-          {" "}
-          ₹ 18,500 at just ₹ 99 per year!
-        </h3>
+        <h2 className="first-heading">Access curated courses worth</h2>
+        <h2 className="first-heading"> ₹ 18,500 at just ₹ 99 per year!</h2>
       </div>
       <div className="icon-text-container">
         <div className="icon-text">
