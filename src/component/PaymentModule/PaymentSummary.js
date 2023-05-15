@@ -1,6 +1,12 @@
 import React, { useState } from "react";
+import s1 from "./s1.png";
+import s2 from "./s2.png";
+import razor from "./razor.png";
 import "./PaymentSummary.css";
-
+import alertt from "./Alert.png";
+import offexp from "./offexp.png";
+import tag from "./Tag.png";
+import btnn from "./Button-Container.png";
 const PaymentSummary = () => {
   const [selectedOption, setSelectedOption] = useState("");
 
@@ -13,13 +19,13 @@ const PaymentSummary = () => {
     // this can be hardcoded or fetched from a backend API
     switch (option) {
       case "option1":
-        return "$50";
+        return "₹99";
       case "option2":
-        return "$100";
+        return "₹179";
       case "option3":
-        return "$150";
+        return "₹149";
       case "option4":
-        return "$200";
+        return "₹99";
       default:
         return "";
     }
@@ -32,12 +38,12 @@ const PaymentSummary = () => {
   return (
     <div className="payment-summary-form">
       <div className="progress-bar">
-        <button className="progress-button active"></button>
-        <button className="progress-button"></button>
+        <img src={s1} className="progress-img"></img>
+        <img src={s2} className="progress-img"></img>
       </div>
-      <h3 className="form-header">Payment Summary</h3>
+      <h3 className="form-header">Select your subscription plan</h3>
       <div className="input-container">
-        <div
+        {/* <div
           className={`input-box ${
             selectedOption === "option1" ? "active" : ""
           }`}
@@ -45,14 +51,16 @@ const PaymentSummary = () => {
         >
           <div className="input-title">Option 1</div>
           <div className="input-amount">{getAmountForOption("option1")}</div>
-        </div>
+        </div> */}
+        <img src={offexp}></img>
         <div
           className={`input-box ${
             selectedOption === "option2" ? "active" : ""
           }`}
           onClick={() => handleOptionSelect("option2")}
         >
-          <div className="input-title">Option 2</div>
+          <img src={tag} className="tag-img"></img>
+          <div className="input-title">12 Months Subscription </div>
           <div className="input-amount">{getAmountForOption("option2")}</div>
         </div>
         <div
@@ -61,7 +69,7 @@ const PaymentSummary = () => {
           }`}
           onClick={() => handleOptionSelect("option3")}
         >
-          <div className="input-title">Option 3</div>
+          <div className="input-title">6 Months Subscription </div>
           <div className="input-amount">{getAmountForOption("option3")}</div>
         </div>
         <div
@@ -70,21 +78,44 @@ const PaymentSummary = () => {
           }`}
           onClick={() => handleOptionSelect("option4")}
         >
-          <div className="input-title">Option 4</div>
+          <div className="input-title">3 Months Subscription </div>
           <div className="input-amount">{getAmountForOption("option4")}</div>
         </div>
       </div>
+      <hr />
+      <div style={{ textAlign: "left", marginLeft: "20px" }}>
+        Subscription Fee <span style={{ marginLeft: "300px" }}>₹18,500</span>
+      </div>
+      <br />
+      <img src={alertt}></img>
       <div className="summary-container">
-        <div className="summary-text">
-          Total Payment: {getAmountForOption(selectedOption)}
+        <div
+          style={{ textAlign: "left", marginLeft: "10px", marginRight: "0px" }}
+        >
+          <b>Total</b> (Incl. of 18% GST)
+          <span
+            style={{
+              marginLeft: "250px",
+              marginTop: "0px",
+              fontWeight: "bold",
+              fontSize: "20px",
+              padding: "0px",
+              textAlign: "right",
+            }}
+          >
+            {getAmountForOption(selectedOption)}
+          </span>
         </div>
       </div>
       <div className="button-container">
-        <button className="cancel-button">Cancel</button>
+        {/* <button className="cancel-button">Cancel</button>
         <button className="submit-button" onClick={handleSubmit}>
-          Submit
-        </button>
+        Submit
+      </button> */}
+        <img src={btnn} className="submit-button"></img>
       </div>
+      <img src={razor}></img>
+      {/* <div className="razor"></div> */}
     </div>
   );
 };
