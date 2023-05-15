@@ -1,9 +1,18 @@
-# Getting Started with Create React App
+## This repository is a part of Coding Assignment from EdYoda. 
+The final working of the website is here 
+![image](https://github.com/whynesspower/edyoda-assignment/assets/77494053/acfcbaad-7c37-43a8-8eb7-c7b7feb4a3dc)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Payment Functionality: 
+`When any choice of  plan is made, the Total amount gets updated according the the selection chosen`
+![image](https://github.com/whynesspower/edyoda-assignment/assets/77494053/59367d5d-0a64-41b6-877e-7209a35f116e)
 
+# This code is close 100% close the Given Figma design. 
+# Video Demo 
+
+https://youtu.be/S3Q3Wu-Uh20 
+
+# Process to setup locally 
 In the project directory, you can run:
 
 ### `npm start`
